@@ -1,0 +1,6 @@
+vendor
+phpunit.xml.dist
+composer.lock
+.phpunit.cache
+.idea
+dev-app
