@@ -35,8 +35,8 @@ abstract class Repository implements Contracts\Repository
 
     public function update(mixed $key, array $params): Model
     {
-        $model = $this->make();
-        $model->findOrFail($key)->update($params);
+        $model = $this->make()->findOrFail($key);
+        $model->update($params);
         return $model->refresh();
     }
 
