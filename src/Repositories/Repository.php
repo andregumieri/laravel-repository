@@ -30,7 +30,7 @@ abstract class Repository implements Contracts\Repository
 
     public function delete(mixed $key): bool
     {
-        return $this->make()->delete($key);
+        return $this->make()->findOrFail($key)->delete();
     }
 
     public function update(mixed $key, array $params): Model
