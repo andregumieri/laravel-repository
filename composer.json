@@ -1,0 +1,17 @@
+{
+    "name": "andregumieri/laravel-repository",
+    "autoload": {
+        "psr-4": {
+            "AndreGumieri\\LaravelRepository\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andre Gumieri de Freitas",
+            "email": "andregumieri@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^10|^11"
+    }
+}
