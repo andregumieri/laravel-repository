@@ -64,9 +64,9 @@ interface Repository
      *
      * @param mixed $key The primary key value to search for.
      *
-     * @return Model The found model, or null if no model is found.
+     * @return Model|null The found model, or null if no model is found.
      */
-    public function find(mixed $key): Model;
+    public function find(mixed $key): ?Model;
 
     /**
      * Find a record by its primary key or throw an exception.

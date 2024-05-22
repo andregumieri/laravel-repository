@@ -40,7 +40,7 @@ abstract class Repository implements Contracts\Repository
         return $model->refresh();
     }
 
-    public function find(mixed $key): Model
+    public function find(mixed $key): ?Model
     {
         return $this->make()->find($key);
     }
