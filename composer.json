@@ -12,6 +12,6 @@
         }
     ],
     "require": {
-        "illuminate/database": "^10|^11"
+        "illuminate/database": "^10|^11|^12"
     }
 }
