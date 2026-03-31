@@ -101,5 +101,5 @@ interface Repository
      *
      * @return LengthAwarePaginator
      */
-    public function searchPaginated(array $searchParams = [], int $perPage = null): LengthAwarePaginator;
+    public function searchPaginated(array $searchParams = [], ?int $perPage = null): LengthAwarePaginator;
 }

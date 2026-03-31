@@ -60,7 +60,7 @@ abstract class Repository implements Contracts\Repository
         return $this->query()->where($searchParams);
     }
 
-    public function searchPaginated(array $searchParams = [], int $perPage = null): LengthAwarePaginator
+    public function searchPaginated(array $searchParams = [], ?int $perPage = null): LengthAwarePaginator
     {
         return $this->searchBuilder($searchParams)->paginate($perPage);
     }
